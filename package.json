@@ -1,5 +1,5 @@
 {
-  "name": "npmsearch",
+  "name": "nps",
   "version": "0.1.0",
   "description": "snappy npm search with ratings",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "npmsearch": "bin/npmsearch.js"
+    "nps": "bin/nps.js",
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tmpvar/npmsearch.git"
+    "url": "git://github.com/tmpvar/nps.git"
   },
   "keywords": [
     "npm",
@@ -19,7 +19,7 @@
     "rating",
     "fast"
   ],
-  "author": "Elijah Insua",
+  "author": "Elijah Insua <tmpvar@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
