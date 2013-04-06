@@ -13,7 +13,7 @@ var query = process.argv.slice(2).join(' ');
 
 var req = http.request({
   hostname: 'npmsearch.com',
-  path: '/query?rows=500&sort=rating+desc&q=' + escape(query)
+  path: '/query?&rows=200&fl=name,description,homepage&rows=500&sort=rating+desc&q=' + escape(query)
 }, function(res) {
   console.log('here');
   var body = '';
