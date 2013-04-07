@@ -1,6 +1,6 @@
 {
   "name": "nps",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "snappy npm search with ratings",
   "main": "index.js",
   "scripts": {
