@@ -1,5 +1,5 @@
 {
-  "name": "nps",
+  "name": "npmsearch-cli",
   "version": "0.1.1",
   "description": "snappy npm search with ratings",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "nps": "bin/nps.js"
+    "npmsearch": "bin/npmsearch-cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tmpvar/nps.git"
+    "url": "git://github.com/tmpvar/npmsearch-cli.git"
   },
   "keywords": [
     "npm",

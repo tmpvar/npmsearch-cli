@@ -9,12 +9,13 @@ if (process.argv.length === 2) {
   return console.log('USAGE: npmsearch <query string>');
 }
 
-var query = process.argv.slice(2).join(' ');
+var query = process.argv.slice(2).join('+');
 
 var req = http.request({
   hostname: 'npmsearch.com',
-  path: '/query?fl=name,description,homepage&rows=200&sort=rating+desc&q=' + escape(query)
+  path: '/query?fields=name,description,homepage&size=10&q=' + escape(query)
 }, function(res) {
+
   var body = '';
   res.setEncoding('utf8');
   res.on('data', function(chunk) {
@@ -26,7 +27,7 @@ var req = http.request({
       var obj = JSON.parse(body);
       console.log('');
 
-      obj.response && obj.response.docs.forEach(function(p) {
+      obj.results && obj.results.forEach(function(p) {
         cursor
           .red().write(p.name + '\n')
           .white().write(p.description + '\n')
