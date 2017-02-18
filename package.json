@@ -1,6 +1,6 @@
 {
   "name": "npmsearch-cli",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "snappy npm search with ratings",
   "main": "index.js",
   "scripts": {
